@@ -1,0 +1,296 @@
+Test ID,Name,Status,Precondition,Objective,Folder,Priority,Component,Labels,Owner,Estimated Time,Coverage (Issues),Coverage (Pages),Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Test Data,Test Script (Step-by-Step) - Expected Result,Test Script (Plain Text),Test Script (BDD)
+FLIG-T1,Validate booking a return trip,Approved,,,/Booking a Flight/Valid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"  Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,,"  Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,,  Click on the Sign in button,,,,
+,,,,,,,,,,,,,"From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,,"From the ""To"" dropdown, select the destination (Sydney)",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '02' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' from the Departing date dropdowns in the 
+month and year dropdown",,,,
+,,,,,,,,,,,,,Select the value '10' in the day dropdown from the Returning date dropdowns,,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' in the month and year dropdown from the 
+Returning date dropdowns",,,,
+,,,,,,,,,,,,,Select the flight '8:00 QF821 Qantas',,,,
+,,,,,,,,,,,,,"Click on the ""Continue"" button",,,,
+FLIG-T2,Validate booking  a one-way trip,Approved,,,/Booking a Flight/Valid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,,"Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,,Click on the Sign in button,,,,
+,,,,,,,,,,,,,Select the one-way trip on the dashboard,,,,
+,,,,,,,,,,,,,"From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,,"From the ""To"" dropdown, select the destination (Sydney)",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '02' in the day 
+dropdownClick on the Continue button",,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' from the Departing date dropdowns in the 
+month and year dropdown",,,,
+,,,,,,,,,,,,,"Click on the ""Continue"" button",,,,
+FLIG-T3,Validate booking a return trip with the same departure and return date,Approved,,,/Booking a Flight/Valid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"Input the value ""agileway"" in the Usernam e field",,,,
+,,,,,,,,,,,,," Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,, Click on the Sign in button,,,,
+,,,,,,,,,,,,," From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,,"From the ""To"" dropdown, select the destination (Sydney)",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '02' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' from the Departing date dropdowns in the 
+month and year dropdown",,,,
+,,,,,,,,,,,,,Select the value '02' in the day dropdown from the Returning date dropdowns,,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' in the month and year dropdown from the 
+Returning date dropdowns",,,,
+,,,,,,,,,,,,, Select the flight '8:00 QF821 Qantas',,,,
+,,,,,,,,,,,,," Click on the ""Continue"" button",,,,
+FLIG-T4,Validate booking a one-way trip with today's date,Approved,,,/Booking a Flight/Valid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"Input the value ""agileway"" in the username field",,,,
+,,,,,,,,,,,,,"Input the value ""test$W1se"" in the user password field",,,,
+,,,,,,,,,,,,,Click on the Sign in button,,,,
+,,,,,,,,,,,,,Select( one-way) trip on dashboard,,,,
+,,,,,,,,,,,,,"From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,,"From the ""To"" dropdown, select the destination (Sydney)",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '03' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' from the Departing date dropdowns in the 
+month and year dropdown",,,,
+,,,,,,,,,,,,,Click on Continue button,,,,
+FLIG-T5,"Validate that the default trio types is ""Return""",Approved,,,/Booking a Flight/Valid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,," Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,,"Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,, Click on the Sign in button,,,,
+,,,,,,,,,,,,,Check the trip tiype is Return,,,,
+,,,,,,,,,,,,,"Click on the ""Continue"" button",,,,
+FLIG-T6,Validate Select Flight on Responsive version,Approved,,,/Booking a Flight/Valid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,Resize the browser window to mobile size or open it on a phone.,,,,
+,,,,,,,,,,,,,Enter username and password.,,,,
+,,,,,,,,,,,,,"Click the Login button.
+
+",,,,
+FLIG-T7,Validate that booking a return trip is not allowed when the return date is before the departure date,Approved,,,/Booking a Flight/Invalid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,," Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,,Click on the Sign in button,,,,
+,,,,,,,,,,,,,"From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,," From the ""To"" dropdown, select the destination (Sydney)",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '10' in the day 
+dropdowns",,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' from the Departing date dropdowns in the 
+month and year dropdowns",,,,
+,,,,,,,,,,,,,Select the value '02' in the day dropdown from the Returning date dropdowns,,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' in the month and year dropdown from the 
+Returning date dropdowns",,,,
+,,,,,,,,,,,,,Select the flight '8:00 QF821 Qantas',,,,
+,,,,,,,,,,,,,"Click on the ""Continue"" button",,,,
+FLIG-T8,Validate that booking is not allowed when the origin and destination are the same,Approved,,,/Booking a Flight/Invalid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,," Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,,Click on the Sign in button,,,,
+,,,,,,,,,,,,,"From the Trip type section, select  Return",,,,
+,,,,,,,,,,,,,"From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,,"From the ""To"" dropdown, select the destination (New York)",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '01' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'January 2025' from the Departing date dropdowns in the 
+month and year dropdown",,,,
+,,,,,,,,,,,,,Select the value '01' in the day dropdown from the Returning date dropdowns,,,,
+,,,,,,,,,,,,,"Select the value 'January 2025' in the month and year dropdown from the 
+Returning date dropdowns",,,,
+,,,,,,,,,,,,,Select the flight '8:00 QF821 Qantas',,,,
+,,,,,,,,,,,,,"Click on the ""Continue"" button",,,,
+,,,,,,,,,,,,,Observe whether the system displays an error or validation message.,,,,
+FLIG-T9,Validate that booking is not allowed when the departure date is in the past,Approved,,,/Booking a Flight/Invalid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,," Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,, Click on the Sign in button,,,,
+,,,,,,,,,,,,," From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,," From the ""To"" dropdown, select the destination (Sydney)",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '01' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'December 2021' from the Departing date dropdowns in the 
+month and year dropdown",,,,
+,,,,,,,,,,,,,Select the value '01' in the day dropdown from the Returning date dropdowns,,,,
+,,,,,,,,,,,,,"Select the value 'May 2025' in the month and year dropdown from the 
+Returning date dropdowns",,,,
+,,,,,,,,,,,,,Select the flight '8:00 QF821 Qantas',,,,
+,,,,,,,,,,,,,"Click on the ""Continue"" button",,,,
+FLIG-T10,Validate that booking is not allowed when the return date is in the past,Approved,,,/Booking a Flight/Invalid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T11,Validate that the return date field is disabled when switching to a one-way trip,Approved,,,/Booking a Flight/Invalid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T12,"Validate system behavior when selecting an invalid day or month(e.g,February30).",Approved,,,/Booking a Flight/Invalid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,," Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,," Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,,Click on the Sign in button,,,,
+,,,,,,,,,,,,,"From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,,"From the ""To"" dropdown, select the destination (Sydney)",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '02' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '29' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'February 2025' from the Departing date dropdowns in the 
+month and year dropdown",,,,
+,,,,,,,,,,,,,Select the value '30' in the day dropdown from the Returning date dropdowns,,,,
+,,,,,,,,,,,,,"Select the value 'February 2025' in the month and year dropdown from the 
+Returning date dropdowns",,,,
+,,,,,,,,,,,,,Select the flight '8:00 QF821 Qantas',,,,
+,,,,,,,,,,,,,"Click on the ""Continue"" button",,,,
+FLIG-T13,Validate error messages when trying to proceed without filling any fields,Approved,,,/Booking a Flight/Invalid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"  Input the value ""agileway"" in the Username field
+
+",,,,
+,,,,,,,,,,,,,"  Input the value ""test$W1se"" in the Password field
+
+",,,,
+,,,,,,,,,,,,,"  Click on the Sign in button
+
+",,,,
+,,,,,,,,,,,,,"  Select the one-way trip on the dashboard
+
+",,,,
+,,,,,,,,,,,,,Click on the Continue button,,,,
+,,,,,,,,,,,,,System displayed erorr message ,,,,
+FLIG-T14,"Validate that booking is not allowed when selecting a departure date far in the future (e.g,10years ahead).",Approved,,,/Booking a Flight/Invalid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,," Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,,Click on the Sign in button,,,,
+,,,,,,,,,,,,," From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,,"From the ""To"" dropdown, select the destination (Sydney)",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '01' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'January 2016' from the Departing date dropdowns in the 
+month and year dropdown",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '01' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'January 2026' from the Departing date dropdowns in the 
+month and year dropdown",,,,
+,,,,,,,,,,,,,Select the flight '8:00 QF821 Qantas',,,,
+,,,,,,,,,,,,,"Click on the ""Continue"" button",,,,
+FLIG-T15,Validate trying to book multiple flights at the same time ,Approved,,,/Booking a Flight/Invalid Select Flight Scenarios,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T16,Validate providing valid information for passenger details,Approved,,,/Booking a Flight/Valid Passenger Details,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,," Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,,Click on the Sign in button,,,,
+,,,,,,,,,,,,,"From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,,"From the ""To"" dropdown, select the destination (Sydney)",,,,
+,,,,,,,,,,,,," From the Departing date dropdowns, select the value '02' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' from the Departing date dropdowns in the 
+month and year dropdown",,,,
+,,,,,,,,,,,,,Select the value '10' in the day dropdown from the Returning date dropdowns,,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' in the month and year dropdown from the 
+Returning date dropdowns",,,,
+,,,,,,,,,,,,, Select the flight '8:00 QF821 Qantas',,,,
+,,,,,,,,,,,,,"Click on the ""Continue"" button",,,,
+,,,,,,,,,,,,,"Input the value ""Ahmed"" in the First name field",,,,
+,,,,,,,,,,,,,"Input the value ""Zaki"" in the Last name field",,,,
+,,,,,,,,,,,,,Click on the Next button,,,,
+FLIG-T17,Validate providing invalid information passenger details 'Very long or numbers',Approved,,,/Booking a Flight/Invalid Passenger Details,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T18,Validate leaving fields empty in passenger details,Approved,,,/Booking a Flight/Invalid Passenger Details,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,,"Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,,Click on the Sign in button,,,,
+,,,,,,,,,,,,,"From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,,"From the ""To"" dropdown, select the destination (Sydney)",,,,
+,,,,,,,,,,,,," From the Departing date dropdowns, select the value '02' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' from the Departing date dropdowns in the 
+month and year dropdown",,,,
+,,,,,,,,,,,,,Select the value '10' in the day dropdown from the Returning date dropdowns,,,,
+,,,,,,,,,,,,," Select the value 'October 2025' in the month and year dropdown from the 
+Returning date dropdowns",,,,
+,,,,,,,,,,,,,Select the flight '8:00 QF821 Qantas',,,,
+,,,,,,,,,,,,,"Click on the ""Continue"" button",,,,
+,,,,,,,,,,,,,Leave the First name field empty,,,,
+,,,,,,,,,,,,,Leave the Last name field empty,,,,
+,,,,,,,,,,,,,Click on the Next button,,,,
+,,,,,,,,,,,,,System displayed error messsage ,,,,
+FLIG-T19,Validate payment with visa card,Approved,,,/Booking a Flight/Valid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,," Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,,Click on the Sign in button,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,"From the ""To"" dropdown, select the destination (New York)",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '06' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'June 2025' from the Departing date dropdowns in the month 
+and year dropdown",,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' in the month and year dropdown from the 
+Returning date dropdowns",,,,
+,,,,,,,,,,,,,Select the flight '8:00 QF821 Qantas',,,,
+,,,,,,,,,,,,,"Click on the ""Continue"" button",,,,
+,,,,,,,,,,,,,"Input the value ""Ahmed"" in the First name field",,,,
+,,,,,,,,,,,,,"Input the value ""Zaki"" in the Last name field",,,,
+,,,,,,,,,,,,,"
+Click on the Next button",,,,
+,,,,,,,,,,,,,"Select the ""Visa""option from the Card Type radio button",,,,
+,,,,,,,,,,,,,"Input the value """" into the Card number field",,,,
+,,,,,,,,,,,,,,,,,
+FLIG-T20,validate payment with master card,Approved,,,/Booking a Flight/Valid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,,"Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,, Click on the Sign in button,,,,
+,,,,,,,,,,,,,"From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,,"From the ""To"" dropdown, select the destination (Sydney)",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '02' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' from the Departing date dropdowns in the 
+month and year dropdown",,,,
+,,,,,,,,,,,,," Select the value '10' in the day dropdown from the Returning date 
+dropdowns",,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' in the month and year dropdown from the 
+Returning date dropdowns",,,,
+,,,,,,,,,,,,, Select the flight '8:00 QF821 Qantas',,,,
+,,,,,,,,,,,,," Click on the ""Continue"" button",,,,
+,,,,,,,,,,,,,"From the ""Card type"" radio button, select the (Mastercard)",,,,
+,,,,,,,,,,,,,"Input the value ""2720 2514 7458 9653"" into the Card number field",,,,
+,,,,,,,,,,,,," From the Expiry date dropdowns, select the value '01' in the day dropdown",,,,
+,,,,,,,,,,,,,"From the Expiry date dropdowns, select the value '2025' in the year 
+dropdown",,,,
+,,,,,,,,,,,,,"Click on the ""Pay now "" button",,,,
+FLIG-T21,Validate error messages displayed for each invalid payment attempt,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,," Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,,Click on the Sign in button,,,,
+,,,,,,,,,,,,,"From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,,"From the ""To"" dropdown, select the destination (New York)",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '06' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'June 2025' from the Departing date dropdowns in the month 
+and year dropdown",,,,
+,,,,,,,,,,,,,Select the value '01' in the day dropdown from the Returning date dropdowns,,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' in the month and year dropdown from the 
+Returning date dropdowns",,,,
+,,,,,,,,,,,,,Select the flight '8:00 QF821 Qantas',,,,
+,,,,,,,,,,,,,"Click on the ""Continue"" button",,,,
+,,,,,,,,,,,,,"Input the value ""Ahmed"" in the First name field",,,,
+,,,,,,,,,,,,,"Input the value ""Zaki"" in the Last name field",,,,
+,,,,,,,,,,,,,Click on the Next button,,,,
+,,,,,,,,,,,,,"Select the ""Visa""option from the Card Type radio button",,,,
+,,,,,,,,,,,,,"Input the value ""33er 4e34 rte5"" into the Card number field",,,,
+,,,,,,,,,,,,,"From the Expiry date dropdowns, select the value '01' in the day dropdown",,,,
+,,,,,,,,,,,,,"From the Expiry date dropdowns, select the value '2025' in the year 
+dropdown",,,,
+,,,,,,,,,,,,,"Click on the ""Pay now "" button",,,,
+,,,,,,,,,,,,,System should display error messsage,,,,
+FLIG-T22,Validate system behavior when entering an extremly large number in the card number field,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T23,Validate system behavior when network connectivity is loast during payment processing,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T24,Validate that payment is not alllowed when attemping to enter text in the expiry date fields,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T25,Validate that payment is not allowed when entering a vaild card number but selecting an incorrect card type,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T26,Validate that payment is not allowed when spaces or special characters are entered in the card number field,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T27,Validate that payment is not allowed when submitting an invaild cardholder name format,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T28,Validate that payment is not allowed when the card number contains non-numeric characters,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T29,Validate that payment is not allowed when the card number field is empty,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T30,Validate that payment is not allowed when the card number has fewer digits that required,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T31,Validate that payment is not allowed when the card number has more digits that required,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T32,Validate that payment is not allowed when the cardholder's name contains numbers or special characters,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T33,Validate that payment is not allowed when the cardholder's name filed is empty,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T34,Validate that payment is not allowed when the expiry date in the past,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T35,"Validate that payment is not allowed when the ""pay now"" button is clicked with all fields empty",Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T36,"Validate that payment is not allowed when the ""pay now"" button is clicked with only some fields filled",Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,,,,,
+FLIG-T37,Validate that payment is not allowed when using an expired credit card,Approved,,,/Booking a Flight/Invalid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,FLIG-12,,,,,,
+FLIG-T38,validate that user can return to book a new flight after successfull payment ,Approved,,,/Booking a Flight/Valid Payment,High,,,712020:2ef3eadd-9bc0-4d60-accf-5b0d225423e7,,,,"  Input the value ""agileway"" in the Username field",,,,
+,,,,,,,,,,,,,"  Input the value ""test$W1se"" in the Password field",,,,
+,,,,,,,,,,,,,  Click on the Sign in button,,,,
+,,,,,,,,,,,,,"From the ""From"" dropdown, select an origin ( New York)",,,,
+,,,,,,,,,,,,,"From the ""To"" dropdown, select the destination (Sydney)",,,,
+,,,,,,,,,,,,,"From the Departing date dropdowns, select the value '02' in the day 
+dropdown",,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' from the Departing date dropdowns in the 
+month and year dropdown",,,,
+,,,,,,,,,,,,,Select the value '10' in the day dropdown from the Returning date dropdowns,,,,
+,,,,,,,,,,,,,"Select the value 'October 2025' in the month and year dropdown from the 
+Returning date dropdowns",,,,
+,,,,,,,,,,,,,Select the flight '8:00 QF821 Qantas',,,,
+,,,,,,,,,,,,,"Click on the ""Continue"" button",,,,
+,,,,,,,,,,,,,"Input the value ""Ahmed"" in the First name field",,,,
+,,,,,,,,,,,,,"Input the value ""Zaki"" in the Last name field",,,,
+,,,,,,,,,,,,,Click on the Next button,,,,
+,,,,,,,,,,,,,"From the ""Card type"" radio button, select the (Visa)",,,,
+,,,,,,,,,,,,,"Input the value ""4111 1111 1111 1111"" into the Card number field",,,,
+,,,,,,,,,,,,,"From the Expiry date dropdowns, select the value '02' in the day dropdown",,,,
+,,,,,,,,,,,,,"From the Expiry date dropdowns, select the value '2027' in the year 
+dropdown",,,,
+,,,,,,,,,,,,,"Click on the ""Pay now "" button",,,,
+,,,,,,,,,,,,,"Click on "" book a new flight"" button",,,,
+,,,,,,,,,,,,,Observe whether the system displays an error or validation message,,,,
